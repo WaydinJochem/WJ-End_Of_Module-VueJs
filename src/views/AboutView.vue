@@ -1,5 +1,11 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <NavAll/>
 </template>
+<script>
+import NavAll from '@/components/NavBar/NavBarAll.vue';
+export default {
+ components:{
+  NavAll
+ }
+}
+</script>
