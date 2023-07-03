@@ -11,7 +11,7 @@
 
 <style scoped>
 div {
-    background-color: rgb(154, 22, 154);
+    background-color: #7303c0;
     display: flex;
     flex-direction: row;
     justify-content: center;
