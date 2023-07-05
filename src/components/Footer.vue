@@ -26,7 +26,7 @@ export default {
   display: grid;
   grid-template-columns: auto auto auto auto;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 img {
     width: 200px;
