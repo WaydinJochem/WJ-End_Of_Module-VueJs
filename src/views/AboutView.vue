@@ -1,11 +1,11 @@
 <template>
   <NavAll />
   <!-- First Start -->
-  <div class="bg-white">
+  <div class="bg-white mt-3">
     <h1 class="bg-body-secondary">
       Who Am I
     </h1>
-    <p>
+    <p class="p-3">
       My Name is Waydin Jochem, I am a 20 year-old man currently residing in Cape Town, South Africa. I done my
       primary-schooling at Saint John's Roman Catholic Primary School, and for my high-schooling I attended Kensington
       Secondary School.My past-times involve alternative sports such as chess , table tennis and video-gaming. I have a
@@ -16,11 +16,11 @@
   <!-- First End -->
 
   <!-- Second Start -->
-  <div class="bg-white">
+  <div class="bg-white mt-3">
     <h1 class="bg-body-secondary">
       Work-Experience
     </h1>
-    <div id="grid-view">
+    <div id="grid-view" class="p-5">
       <!-- First Card Start -->
       <div class="card">
         <div class="card-body">
@@ -69,7 +69,7 @@
   </div>
   <!-- Second End -->
   <!-- Skills Section -->
-  <div class="bg-white">
+  <div class="bg-black mt-3">
     <h1 class="bg-body-secondary">
       Who Am I
     </h1>
@@ -98,7 +98,7 @@ export default {
 #grid-view {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 20px;
+  gap: 40px;
   padding: 1%;
 }
 
