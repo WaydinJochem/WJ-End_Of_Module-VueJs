@@ -1,6 +1,6 @@
 <template>
   <NavAll />
-  <!-- First Start -->
+  <!-- Who Am I Section Start -->
   <div class="bg-white mt-3 container-fluid">
     <h1 class="bg-body-secondary">
       Who Am I
@@ -13,10 +13,10 @@
       gathering greater and greater amounts of knowledge, hence why I decided to pursue a career in IT
     </p>
   </div>
-  <!-- First End -->
+  <!-- Who Am I Section End -->
 
-  <!-- Second Start -->
-   <div class="bg-white mt-3 container-fluid">
+  <!-- Experience Section Start -->
+  <div class="bg-white mt-3 container-fluid">
     <h1 class="bg-body-secondary">
       Work-Experience
     </h1>
@@ -69,7 +69,7 @@
       <!-- Third Card End -->
     </div>
   </div>
-  <!-- Second End -->
+  <!-- Experience Section End -->
   <!-- Skills Section -->
   <div class="mt-3 container-fluid bg-white mt-3">
     <h1 class="m-0">
