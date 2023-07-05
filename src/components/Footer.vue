@@ -26,6 +26,7 @@ export default {
   gap: 20px;
 }
 img {
+    width: 200px;
     border-radius: 50%;
 }
 
