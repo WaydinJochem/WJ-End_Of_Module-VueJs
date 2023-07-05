@@ -1,7 +1,7 @@
 <template>
   <NavAll />
   <!-- First Start -->
-  <div class="bg-white mt-3">
+  <div class="bg-white mt-3 container-fluid">
     <h1 class="bg-body-secondary">
       Who Am I
     </h1>
@@ -16,51 +16,53 @@
   <!-- First End -->
 
   <!-- Second Start -->
-  <div class="bg-white mt-3">
+  <div class="bg-white mt-3 container-fluid">
     <h1 class="bg-body-secondary">
       Work-Experience
     </h1>
-    <div id="grid-view" class="p-5">
-      <!-- First Card Start -->
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">
-            Factreton Community Centre
-          </h3>
-          <div class="card-text">
-            <h4 class="text-center">
-              17 July 2017 - 26 July 2017
-            </h4>
+    <div>
+      <div id="grid-view" class="p-5">
+        <!-- First Card Start -->
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">
+              Factreton Community Centre
+            </h3>
+            <div class="card-text">
+              <h4 class="text-center">
+                17 July 2017 - 26 July 2017
+              </h4>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- First Card End -->
+        <!-- First Card End -->
 
-      <!-- Second Card Start -->
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">
-            Kensington Home For The Aged
-          </h3>
-          <div class="card-text">
-            <h4 class="text-center">
-              75 hours
-            </h4>
+        <!-- Second Card Start -->
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">
+              Kensington Home For The Aged
+            </h3>
+            <div class="card-text">
+              <h4 class="text-center">
+                75 hours
+              </h4>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Second Card End -->
+        <!-- Second Card End -->
 
-      <!-- Third Card Start -->
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">
-            MSC Business College
-          </h3>
-          <div class="card-text">
-            <h4 class="text-center">
-              18 May 2022 - 5 July 2022
-            </h4>
+        <!-- Third Card Start -->
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">
+              MSC Business College
+            </h3>
+            <div class="card-text">
+              <h4 class="text-center">
+                18 May 2022 - 5 July 2022
+              </h4>
+            </div>
           </div>
         </div>
       </div>
@@ -69,11 +71,11 @@
   </div>
   <!-- Second End -->
   <!-- Skills Section -->
-  <div class="mt-3">
-    <h1 class="bg-body-secondary m-0">
+  <div class="mt-3 container-fluid bg-white">
+    <h1 class="m-0">
       Who Am I
     </h1>
-    <p id="Ss" class="p-5">
+    <p id="Ss" class="-auto container-fluid row">
       <img src="https://i.postimg.cc/Jn3PV97N/html-5-logotype.png" alt="img">
       <img src="https://i.postimg.cc/gk3k9s3Y/files.png" alt="img">
       <img src="https://i.postimg.cc/66k51g2j/bootstrap.png" alt="img">
@@ -102,12 +104,16 @@ export default {
   padding: 1%;
 }
 
-#Ss {
+h1 {
+  background-color: aqua;
+}
+
+/* #Ss {
   background-color: aliceblue;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-}
+} */
 
 div img {
   width: 100px;
