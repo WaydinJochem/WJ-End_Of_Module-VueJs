@@ -1,6 +1,7 @@
 <template>
   <NavAll />
   <!-- First Start -->
+<<<<<<< HEAD
   <div class="bg-white mt-3 container-fluid">
     <h1 class="bg-body-secondary">
       Who Am I
@@ -16,7 +17,7 @@
   <!-- First End -->
 
   <!-- Second Start -->
-  <div class="bg-white mt-3 container-fluid">
+   <div class="bg-white mt-3 container-fluid">
     <h1 class="bg-body-secondary">
       Work-Experience
     </h1>
@@ -71,7 +72,7 @@
   </div>
   <!-- Second End -->
   <!-- Skills Section -->
-  <div class="mt-3 container-fluid bg-white">
+  <div class="mt-3 container-fluid bg-white mt-3">
     <h1 class="m-0">
       Who Am I
     </h1>

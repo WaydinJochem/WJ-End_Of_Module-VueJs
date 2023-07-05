@@ -17,15 +17,15 @@ export default {
   }
 }
 </script>
-<style >
-/* body {
+<style scoped >
+body {
   background-image:
     radial-gradient(at top left, transparent 71%, purple 10%),
     linear-gradient(125deg, purple, black);
   background-size: 100%;
   background-attachment: fixed;
   color: white;
-} */
+}
 
 img {
   width: 100px;
