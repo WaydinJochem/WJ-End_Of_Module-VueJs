@@ -1,14 +1,15 @@
 <template>
-    <NavAll/>
+    <NavAll />
+  <TestComp/>
 </template>
 <script>
 import NavAll from '@/components/NavBar/NavBarAll.vue';
+import TestComp from '@/components/Accordion.vue';
+
 export default {
- components:{
-  NavAll
- }
+    components: {
+        NavAll, TestComp
+    }
 }
 </script>
-<style>
-    
-</style>
+<style></style>
