@@ -13,11 +13,7 @@ export default {
 </script>
 <style>
 body {
-<<<<<<< HEAD
     background: linear-gradient(to bottom right, white, #7303c0, #333);
-=======
-  background: linear-gradient(to bottom right, white, #7303c0, #333);
->>>>>>> HomePage
     animation: spinning 15s ease infinite;
     background-size: 200% 200%;
     background-attachment: fixed;
