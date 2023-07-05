@@ -12,7 +12,7 @@ export default {
 </script>
 <style>
 body {
-    background: linear-gradient(to right, white, #7303c0, #333);
+    background: linear-gradient(to bottom right, white, #7303c0, #333);
     animation: spinning 15s ease infinite;
     background-size: 200% 200%;
     background-attachment: fixed;
@@ -25,7 +25,7 @@ body {
     }
 
     50% {
-        background-position: 100% 150%;
+        background-position: 100% 100%;
     }
 
     100% {

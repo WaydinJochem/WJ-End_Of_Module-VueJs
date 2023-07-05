@@ -69,11 +69,11 @@
   </div>
   <!-- Second End -->
   <!-- Skills Section -->
-  <div class="bg-black mt-3">
-    <h1 class="bg-body-secondary">
+  <div class="mt-3">
+    <h1 class="bg-body-secondary m-0">
       Who Am I
     </h1>
-    <p>
+    <p id="Ss" class="p-5">
       <img src="https://i.postimg.cc/Jn3PV97N/html-5-logotype.png" alt="img">
       <img src="https://i.postimg.cc/gk3k9s3Y/files.png" alt="img">
       <img src="https://i.postimg.cc/66k51g2j/bootstrap.png" alt="img">
@@ -86,7 +86,7 @@
 
   <!-- End of Skills Section -->
 </template>
-<script>
+<script scoped>
 import NavAll from '@/components/NavBar/NavBarAll.vue';
 export default {
   components: {
@@ -103,6 +103,7 @@ export default {
 }
 
 #Ss {
+  background-color: aliceblue;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
