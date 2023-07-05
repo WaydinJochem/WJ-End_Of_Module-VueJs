@@ -1,8 +1,7 @@
 <template>
+    <!-- Footer refusing to stay at the bottom come back and look into it -->
     <RouterView />
-    <footer>
-        <FooterComp />
-    </footer>
+    <FooterComp />
 </template>
 <script>
 import FooterComp from './components/Footer.vue';
@@ -14,7 +13,7 @@ export default {
 </script>
 <style>
 body {
-    background: linear-gradient(to right,white, #7303c0, #333);
+    background: linear-gradient(to right, white, #7303c0, #333);
     animation: spinning 15s ease infinite;
     background-size: 200% 200%;
     background-attachment: fixed;
@@ -34,4 +33,5 @@ body {
         background-position: 0% 0%;
     }
 }
+
 </style>
