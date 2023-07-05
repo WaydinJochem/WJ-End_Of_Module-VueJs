@@ -1,7 +1,6 @@
 <template>
   <NavAll />
   <!-- First Start -->
-<<<<<<< HEAD
   <div class="bg-white mt-3 container-fluid">
     <h1 class="bg-body-secondary">
       Who Am I
