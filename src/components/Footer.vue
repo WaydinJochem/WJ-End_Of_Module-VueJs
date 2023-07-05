@@ -26,10 +26,10 @@ export default {
   display: grid;
   grid-template-columns: auto auto auto auto;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 img {
-    width: 200px;
+    width: 100px;
     border-radius: 50%;
 }
 
