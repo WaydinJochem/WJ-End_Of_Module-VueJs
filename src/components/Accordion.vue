@@ -1,5 +1,5 @@
 <template>
-      <div v-if="testimonials">
+  <div v-if="testimonials">
         <div v-for="testimonials in testimonials" :key="testimonials.id" :testimonials="testimonials">
             <div class="accordion accordion-flush container" id="accordionFlushExample">
             <div class="accordion-item">
@@ -24,7 +24,7 @@
         </div>
         </div>
     </div>
-    <div v-else class="text-center">Waiting To Show</div>
+    <div v-else class="text-center">Waiting To show</div>
 </template>
 <script>
 export default {

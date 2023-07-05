@@ -1,9 +1,11 @@
 <template>
-  <NavHome />
-  <img src="https://i.postimg.cc/xTjh0n2R/Free-Sample-By-Wix.png" alt="Logo">
-  <div id="myself">
-    <img src="https://i.postimg.cc/bJWJC8mN/Waydin-Jochem-C12-C1-25-Apr23-3.jpg" id="profile">
-  </div>
+  <main>
+    <NavHome />
+    <img src="https://i.postimg.cc/xTjh0n2R/Free-Sample-By-Wix.png" alt="Logo">
+    <div id="myself">
+      <img src="https://i.postimg.cc/bJWJC8mN/Waydin-Jochem-C12-C1-25-Apr23-3.jpg" id="profile">
+    </div>
+  </main>
 </template>
 
 <script>
@@ -17,8 +19,9 @@ export default {
   }
 }
 </script>
-<style scoped >
-body {
+<style scoped>
+main {
+  min-height: 100vh;
   background-image:
     radial-gradient(at top left, transparent 71%, purple 10%),
     linear-gradient(125deg, purple, black);
