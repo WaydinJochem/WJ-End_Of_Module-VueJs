@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center col-md-12" id="Bottom">
+    <div class="text-center col-md-12" id="foot">
         <div class="icons py-4">
             <a href="https://twitter.com/WaydinJochem?t=TbGXE_43BrbopC1Z5_H1Iw&s=31">
                 <img src="https://i.postimg.cc/C1HbZ63J/icons8-twitter-circled-2.gif" alt="twitter" class="img-fluid">
@@ -19,9 +19,7 @@ export default {
 }
 </script>
 <style scoped>
-#Bottom {
-    margin-bottom: 0;
-}
+
 .icons {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -35,6 +33,6 @@ img {
 
 div {
     background-color: #7303c0;
-
+    margin-top: 20px;
 }
 </style>
