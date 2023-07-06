@@ -2,20 +2,27 @@ import { createStore } from "vuex";
 export default createStore({
   state: {
     testimonials: null,
-    Data: null,
   },
   mutations: {
-    setTestimonials: (state, testimonials) => {
-      state.testimonials = testimonials;
-    },
-    setData: (state, Data) => {
-      state.Data = setData;
+    setTestimonials: (state, value) => {
+      state.testimonials = value;
     },
   },
   actions: {
-    getTestimonials: async (context) => {
-      fetch("https://waydinjochem.github.io/api/testimonials.json")
-        .then((res) => res.json())
-        .then((testimonials) => context.commit("setTestimonials", testimonials.testimonials));
-    }},
-  })
+    async fetchTestimonials(context) {
+      try {
+        let { testimonials } = await (
+          await fetch("https://waydinjochem.github.io/data.json")
+        ).json();
+        if (testimonials) {
+          context.commit("setTestimonials", testimonials);
+        } else {
+          alert("Error");
+        }
+        
+      } catch (e) {
+        console.error(error);
+      }
+    },
+  },
+});
