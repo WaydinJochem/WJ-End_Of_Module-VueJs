@@ -75,14 +75,16 @@
     <h1 class="m-0">
       Who Am I
     </h1>
-    <p id="Ss" class="-auto container-fluid row">
-      <img src="https://i.postimg.cc/Jn3PV97N/html-5-logotype.png" alt="img">
-      <img src="https://i.postimg.cc/gk3k9s3Y/files.png" alt="img">
-      <img src="https://i.postimg.cc/66k51g2j/bootstrap.png" alt="img">
-      <img src="https://i.postimg.cc/nhkFrLdg/Screenshot-2023-07-03-100843.png" alt="img">
-      <img src="https://i.postimg.cc/Zq5Tdh2R/14951662-0.jpg" alt="img">
-      <img src="https://i.postimg.cc/W4YsmHc7/eng.png" alt="img">
-      <img src="https://i.postimg.cc/B6Z1bycc/south-africa.png" alt="img">
+    <p id="Ss" class="container-fluid row">
+      <div class="text-center">
+        <img src="https://i.postimg.cc/Jn3PV97N/html-5-logotype.png" alt="img">
+        <img src="https://i.postimg.cc/gk3k9s3Y/files.png" alt="img">
+        <img src="https://i.postimg.cc/66k51g2j/bootstrap.png" alt="img">
+        <img src="https://i.postimg.cc/nhkFrLdg/Screenshot-2023-07-03-100843.png" alt="img">
+        <img src="https://i.postimg.cc/Zq5Tdh2R/14951662-0.jpg" alt="img">
+        <img src="https://i.postimg.cc/W4YsmHc7/eng.png" alt="img">
+        <img src="https://i.postimg.cc/B6Z1bycc/south-africa.png" alt="img">
+      </div>
     </p>
   </div>
 
@@ -108,12 +110,6 @@ h1 {
   background-color: aqua;
 }
 
-/* #Ss {
-  background-color: aliceblue;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-} */
 
 div img {
   width: 100px;
