@@ -75,16 +75,14 @@
     <h1 class="m-0">
       Who Am I
     </h1>
-    <p id="Ss" class="container-fluid row">
-      <div class="text-center">
-        <img src="https://i.postimg.cc/Jn3PV97N/html-5-logotype.png" alt="img">
-        <img src="https://i.postimg.cc/gk3k9s3Y/files.png" alt="img">
-        <img src="https://i.postimg.cc/66k51g2j/bootstrap.png" alt="img">
-        <img src="https://i.postimg.cc/nhkFrLdg/Screenshot-2023-07-03-100843.png" alt="img">
-        <img src="https://i.postimg.cc/Zq5Tdh2R/14951662-0.jpg" alt="img">
-        <img src="https://i.postimg.cc/W4YsmHc7/eng.png" alt="img">
-        <img src="https://i.postimg.cc/B6Z1bycc/south-africa.png" alt="img">
-      </div>
+    <p id="Ss" class="-auto container-fluid row">
+      <img src="https://i.postimg.cc/Jn3PV97N/html-5-logotype.png" alt="img">
+      <img src="https://i.postimg.cc/gk3k9s3Y/files.png" alt="img">
+      <img src="https://i.postimg.cc/66k51g2j/bootstrap.png" alt="img">
+      <img src="https://i.postimg.cc/nhkFrLdg/Screenshot-2023-07-03-100843.png" alt="img">
+      <img src="https://i.postimg.cc/Zq5Tdh2R/14951662-0.jpg" alt="img">
+      <img src="https://i.postimg.cc/W4YsmHc7/eng.png" alt="img">
+      <img src="https://i.postimg.cc/B6Z1bycc/south-africa.png" alt="img">
     </p>
   </div>
 
@@ -109,14 +107,13 @@ export default {
 h1 {
   background-color: aqua;
 }
-
 .container-fluid {
   background-image: radial-gradient(purple, black);
-  border-radius: 20px;
-  margin: 5%;
-  padding: 0.8%;
-  text-align: center;
-  color: white;
+    border-radius: 20px;
+    /* margin: 5%; */
+    padding: 0.8%;
+    text-align: center;
+    color: white;
 }
 
 /* #Ss {
