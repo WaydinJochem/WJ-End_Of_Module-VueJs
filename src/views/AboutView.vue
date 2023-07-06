@@ -75,7 +75,7 @@
     <h1 class="m-0">
       Who Am I
     </h1>
-    <p id="Ss" class="-auto container-fluid row">
+    <p id="Ss" class=" container-fluid row mx-auto">
       <img src="https://i.postimg.cc/Jn3PV97N/html-5-logotype.png" alt="img">
       <img src="https://i.postimg.cc/gk3k9s3Y/files.png" alt="img">
       <img src="https://i.postimg.cc/66k51g2j/bootstrap.png" alt="img">
@@ -106,12 +106,13 @@ export default {
 
 h1 {
   background-color: aqua;
+  border-radius: 20px;
 }
-.container-fluid {
+.container-fluid:not(#Ss) {
   background-image: radial-gradient(purple, black);
     border-radius: 20px;
     /* margin: 5%; */
-    padding: 0.8%;
+    padding: 1%;
     text-align: center;
     color: white;
 }
