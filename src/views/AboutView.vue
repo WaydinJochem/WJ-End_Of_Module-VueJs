@@ -71,7 +71,7 @@
   </div>
   <!-- Experience Section End -->
   <!-- Skills Section -->
-  <div class="mt-3 container-fluid bg-white">
+  <div class="mt-3 container-fluid bg-white mt-3">
     <h1 class="m-0">
       Who Am I
     </h1>
@@ -108,6 +108,15 @@ export default {
 
 h1 {
   background-color: aqua;
+}
+
+.container-fluid {
+  background-image: radial-gradient(purple, black);
+  border-radius: 20px;
+  margin: 5%;
+  padding: 0.8%;
+  text-align: center;
+  color: white;
 }
 
 /* #Ss {
