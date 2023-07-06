@@ -1,8 +1,8 @@
 <template>
   <NavAll />
   <!-- Who Am I Section Start -->
-  <div class="bg-white mt-3 container-fluid">
-    <h1 class="bg-body-secondary">
+  <div class="mt-3 container-fluid">
+    <h1 class="">
       Who Am I
     </h1>
     <p class="p-3">
@@ -110,6 +110,12 @@ h1 {
   background-color: aqua;
 }
 
+/* #Ss {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+} */
 
 div img {
   width: 100px;
