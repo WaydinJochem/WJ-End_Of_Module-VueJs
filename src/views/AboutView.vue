@@ -116,6 +116,14 @@ h1 {
     text-align: center;
     color: white;
 }
+.container-fluid {
+  background-image: radial-gradient(purple, black);
+    border-radius: 20px;
+    /* margin: 5%; */
+    padding: 0.8%;
+    text-align: center;
+    color: white;
+}
 
 /* #Ss {
   background-color: aliceblue;
