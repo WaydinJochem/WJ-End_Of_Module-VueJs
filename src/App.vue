@@ -34,5 +34,13 @@ body {
         background-position: 0% 0%;
     }
 }
+.container-fluid:not(#Ss) {
+  background-image: radial-gradient(purple, black);
+    border-radius: 20px;
+    /* margin: 5%; */
+    padding: 1%;
+    text-align: center;
+    color: white;
+}
 
 </style>
