@@ -75,7 +75,7 @@ export default {
 }
 
 .flip-card-back {
-    background-image: url({{ projects.back}});
+    background-image: url('https://i.postimg.cc/P5r8bbw3/Website_gambar.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
