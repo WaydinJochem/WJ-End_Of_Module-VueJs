@@ -23,8 +23,11 @@ export default {
 main {
   min-height: 100vh;
   background-image:
-    radial-gradient(at top left, transparent 71%, purple 10%),
-    linear-gradient(125deg, purple, black);
+    radial-gradient(at top left, transparent 71%, rgb(89, 2, 89) 10%),
+    radial-gradient(at top left, transparent 70%, rgba(126, 12, 171, 0.749) 10%, rgb(85, 6, 85)),
+    radial-gradient(at top left, transparent 69%, rgba(126, 12, 171, 0.749) 10%, rgb(85, 6, 85)),
+    radial-gradient(at top left, transparent 68%, rgba(126, 12, 171, 0.749) 10%, rgb(85, 6, 85)),
+    linear-gradient(125deg, rgb(96, 21, 96), black);
   background-size: 100%;
   background-attachment: fixed;
   color: white;
