@@ -1,5 +1,5 @@
 <template>
-    <div v-if="project">
+    <div v-if="projects">
         <div v-for="projects in projects" :key="projects.id" :projects="projects">
             <!-- Card Start -->
             <div class="container-fluid p-3">
@@ -12,15 +12,15 @@
                                 {{ projects.name }}
                             </h4>
                             <div>
-                                <img src={{ projects.front }} alt="" class="cardpic">
+                                <img :src="projects.front" alt="" class="cardpic">
                             </div>
                         </div>
                         <div class="flip-card-back align-middle">
                             <p class="text-center">
                                 {{ projects.descr }}
                             </p>
-                            <a class="btn btn-info" href={{ projects.link }}>Launch Site</a>
-                            <a class="btn btn-info" href={{ projects.git }}>Launch Site</a>
+                            <a class="btn btn-info" :href="projects.link">Launch Site</a>
+                            <a class="btn btn-info" :href="projects.git">Launch Site</a>
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,14 @@
 </template>
 <script>
 export default {
-
+    computed: {
+        projects() {
+            return this.$store.state.projects
+        }
+    },
+    mounted() {
+        this.$store.dispatch("fetchProjects");
+    },
 }
 </script>
 <style>
