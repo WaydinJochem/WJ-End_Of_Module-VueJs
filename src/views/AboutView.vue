@@ -2,7 +2,7 @@
   <NavAll />
   <!-- Who Am I Section Start -->
   <div class="mt-3 container-fluid">
-    <h1 class="">
+    <h1>
       Who Am I
     </h1>
     <p class="p-3">
@@ -17,61 +17,108 @@
 
   <!-- Experience Section Start -->
   <div class="bg-white mt-3 container-fluid">
-    <h1 class="bg-body-secondary">
+    <h1>
       Work-Experience
     </h1>
     <div>
-      <div id="grid-view" class="p-5">
+      <div id="grid-view" class="row bg-primary container mx-auto ps-">
         <!-- First Card Start -->
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title">
-              Factreton Community Centre
-            </h3>
-            <div class="card-text">
-              <h4 class="text-center">
-                17 July 2017 - 26 July 2017
-              </h4>
+        <div class="flip-card col-4">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3 class="card-title">
+                Factreton Community Centre
+              </h3>
+              <div class="card-text">
+                <h4 class="text-center">
+                  17 July 2017 - 26 July 2017
+                </h4>
+              </div>
+            </div>
+            <div class="flip-card-back bg-primary">
+              <p>Proving help for 2 hours everyday. Helping in various ways which
+                include
+                but
+                were
+                not
+                limited to:
+              <ul>
+                <li>Cleaning</li>
+                <li>Serving out of Goods provided at Centre (e.g. Food and
+                  Beverages)
+                </li>
+              </ul>
+              </p>
             </div>
           </div>
         </div>
         <!-- First Card End -->
 
         <!-- Second Card Start -->
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title">
-              Kensington Home For The Aged
-            </h3>
-            <div class="card-text">
-              <h4 class="text-center">
-                75 hours
-              </h4>
+        <div class="flip-card col-4">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3 class="card-title">
+                Kensington Home For The Aged
+              </h3>
+              <div class="card-text">
+                <h4 class="text-center">
+                  75 hours
+                </h4>
+              </div>
+            </div>
+            <div class="flip-card-back bg-primary">
+              <p>Proving help for 2 hours everyday. Helping in various ways which
+                include
+                but
+                were
+                not
+                limited to:
+              <ul>
+                <li>Cleaning</li>
+                <li>Serving out of Goods provided at Centre (e.g. Food and
+                  Beverages)
+                </li>
+              </ul>
+              </p>
             </div>
           </div>
         </div>
+
         <!-- Second Card End -->
 
         <!-- Third Card Start -->
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title">
-              MSC Business College
-            </h3>
-            <div class="card-text">
-              <h4 class="text-center">
-                18 May 2022 - 5 July 2022
-              </h4>
+        <div class="flip-card col-4">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3 class="card-title">
+                MSC Business College
+              </h3>
+              <div class="card-text">
+                <h4 class="text-center">
+                  18 May 2022 - 5 July 2022
+                </h4>
+              </div>
+            </div>
+            <div class="flip-card-back bg-primary">
+              <p>
+                General Sales Assistant, Learnership Programme Skills
+                Programme,
+                proving
+                practical and theorectical knowledge on working in retail related
+                compaines
+              </p>
             </div>
           </div>
         </div>
+
+        <!-- Third Card End -->
       </div>
-      <!-- Third Card End -->
     </div>
   </div>
   <!-- Experience Section End -->
   <!-- Skills Section -->
-  <div class="mt-3 container-fluid bg-white mt-3">
+  <div class="mt-3 container-fluid bg-white">
     <h1 class="m-0">
       Who Am I
     </h1>
@@ -97,40 +144,69 @@ export default {
 }
 </script>
 <style scoped>
-#grid-view {
+/* #grid-view {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 40px;
   padding: 1%;
-}
+} */
 
 h1 {
-  background-color: aqua;
   border-radius: 20px;
 }
+
 .container-fluid:not(#Ss) {
   background-image: radial-gradient(purple, black);
-    border-radius: 20px;
-    /* margin: 5%; */
-    padding: 1%;
-    text-align: center;
-    color: white;
-}
-.container-fluid {
-  background-image: radial-gradient(purple, black);
-    border-radius: 20px;
-    /* margin: 5%; */
-    padding: 0.8%;
-    text-align: center;
-    color: white;
+  border-radius: 20px;
+  padding: 1%;
+  text-align: center;
+  color: white;
 }
 
-/* #Ss {
-  background-color: aliceblue;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-} */
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  border-radius: 20%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20%;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20%;
+}
+
+.flip-card-front {
+  padding: 20px;
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  padding: 5px;
+  color: white;
+  transform: rotateY(180deg);
+}
 
 div img {
   width: 100px;
