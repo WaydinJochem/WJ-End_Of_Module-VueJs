@@ -8,10 +8,19 @@
                 <div class="flip-card col-md-4 glow">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="./Assets/icons/icons8-1-64.png" alt="" class="cardpic">
+                            <h4>
+                                {{ projects.name }}
+                            </h4>
+                            <div>
+                                <img src={{ projects.front }} alt="" class="cardpic">
+                            </div>
                         </div>
                         <div class="flip-card-back align-middle">
-                            <a class="btn btn-info" href="http://waydinbootstrap.netlify.app">Launch Site</a>
+                            <p class="text-center">
+                                {{ projects.descr }}
+                            </p>
+                            <a class="btn btn-info" href={{ projects.link }}>Launch Site</a>
+                            <a class="btn btn-info" href={{ projects.git }}>Launch Site</a>
                         </div>
                     </div>
                 </div>
@@ -26,4 +35,55 @@ export default {
 
 }
 </script>
-<style></style>
+<style>
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 20%;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20%;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20%;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-image: url({{ projects.back}});
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.cardpic {
+    height: 200px;
+    width: 200px;
+}
+</style>
