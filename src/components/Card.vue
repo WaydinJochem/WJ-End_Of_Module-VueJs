@@ -1,11 +1,10 @@
 <template>
-    <div v-if="projects">
-        <div v-for="projects in projects" :key="projects.id" :projects="projects">
+    <div v-if="projects" id="display">
+        <div v-for="projects in projects" :key="projects.id" :projects="projects" >
             <!-- Card Start -->
-            <div class="container-fluid p-3">
-                <h2 class="playball text-center">Projects</h2>
+            <div class="container-fluid">
                 <!-- Project Card 1 -->
-                <div class="flip-card col-md-4 glow">
+                <div class="flip-card glow">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h4>
@@ -43,6 +42,13 @@ export default {
 }
 </script>
 <style>
+#display {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+
 .flip-card {
     background-color: transparent;
     width: 300px;
