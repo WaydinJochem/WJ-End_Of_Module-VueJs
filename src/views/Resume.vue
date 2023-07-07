@@ -21,7 +21,7 @@ export default {
         }
     },
     mounted() {
-        this.$store.dispatch("fetchTestimonials");
+        this.$store.dispatch("fetchResume");
     },
     components: {
         NavAll
