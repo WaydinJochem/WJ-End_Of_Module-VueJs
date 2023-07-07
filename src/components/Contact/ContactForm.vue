@@ -1,5 +1,5 @@
 <template>
-    <section id="contact" class="container py-2 my-2 ">
+    <section id="contact" class="container py-2 my-4 ">
         <form action="https://formspree.io/f/mqkorbqv" method="POST">
             <div>
                 <label>
