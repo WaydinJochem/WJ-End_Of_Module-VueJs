@@ -15,7 +15,7 @@ export default {
 
 body {
     background: linear-gradient( white, purple, black);
-    animation: spinning 12s ease infinite;
+    animation: spinning 10s ease infinite;
     background-size: 200% 200%;
     background-attachment: fixed;
     font-family: "Bruno Ace", cursive;

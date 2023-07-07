@@ -1,10 +1,10 @@
 <template>
     <div v-if="projects" id="display">
-        <div v-for="projects in projects" :key="projects.id" :projects="projects" >
+        <div v-for="projects in projects" :key="projects.id" :projects="projects">
             <!-- Card Start -->
             <div class="container-fluid">
                 <!-- Project Card 1 -->
-                <div class="flip-card glow">
+                <div class="flip-card mb-4">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h4>
@@ -14,12 +14,19 @@
                                 <img :src="projects.front" alt="" class="cardpic">
                             </div>
                         </div>
-                        <div class="flip-card-back align-middle">
-                            <p class="text-center">
-                                {{ projects.descr }}
-                            </p>
-                            <a class="btn btn-info" :href="projects.link">Launch Site</a>
-                            <a class="btn btn-info" :href="projects.git">Launch Site</a>
+                        <div class="flip-card-back p-2">
+                            <div class="bg-body-secondary rounded-4 w-50 mx-auto">
+                                <img :src="projects.img" alt="" class="imgpic">
+                            </div>
+                            <div>
+                                <p class="text-center">
+                                    {{ projects.descr }}
+                                </p>
+                            </div>
+                            <div>
+                                <a class="btn btn-dark col-4 p-0 me-2" :href="projects.git">Launch Git</a>
+                                <a class="btn btn-dark col-4 p-0" :href="projects.link" >Launch Site</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -43,17 +50,16 @@ export default {
 </script>
 <style>
 #display {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
+   display: flex;
+   flex-wrap: wrap;
 }
 
 
 .flip-card {
     background-color: transparent;
     width: 300px;
-    height: 300px;
-    perspective: 1000px;
+    height: 280px;
+    perspective: 1000 px;
     border-radius: 20%;
 }
 
@@ -88,7 +94,7 @@ export default {
 }
 
 .flip-card-back {
-    background-image: url('https://i.postimg.cc/P5r8bbw3/Website_gambar.jpg');
+  
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -99,4 +105,10 @@ export default {
     height: 200px;
     width: 200px;
 }
+.imgpic {
+    height: 100px;
+    width: 100px;
+}
+
+@media only screen and (max-width:)
 </style>
