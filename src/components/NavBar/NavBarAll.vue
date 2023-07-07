@@ -58,7 +58,7 @@ a:hover {
 }
 @media only screen and (max-width:575px){
     div {
-        font-size: 30px;
+        font-size: 10px;
     }
 }
 /* @media only screen and (max-width:575px){
