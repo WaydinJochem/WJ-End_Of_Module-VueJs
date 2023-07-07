@@ -14,8 +14,8 @@ export default {
 <style>
 
 body {
-    background: linear-gradient(to bottom right, white, #7303c0, #333);
-    animation: spinning 15s ease infinite;
+    background: linear-gradient( white, purple, black);
+    animation: spinning 12s ease infinite;
     background-size: 200% 200%;
     background-attachment: fixed;
     font-family: "Bruno Ace", cursive;
@@ -34,13 +34,6 @@ body {
         background-position: 0% 0%;
     }
 }
-.container-fluid:not(#Ss) {
-  background-image: radial-gradient(purple, black);
-    border-radius: 20px;
-    /* margin: 5%; */
-    padding: 1%;
-    text-align: center;
-    color: white;
-}
+
 
 </style>

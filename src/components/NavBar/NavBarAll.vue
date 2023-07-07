@@ -1,19 +1,26 @@
 <template >
-    <div class="container-fluid row" >
-        <div class="text-center">
-            <router-link to="/">Home</router-link>
-            <router-link to="/about">About</router-link>
-            <router-link to="/resume">Resume</router-link>
-            <router-link to="/projects">Projects</router-link>
-            <router-link to="/testimonials">Testimonials</router-link>
-            <router-link to="/contact">Contact</router-link>
+    <div>
+        <div class="text-center row container-fluid" id="dislplay">
+            <router-link to="/" class="col-sm">Home</router-link>
+            <router-link to="/about" class="col-sm">About</router-link>
+            <router-link to="/resume" class="col-sm">Resume</router-link>
+            <router-link to="/projects" class="col-sm">Projects</router-link>
+            <router-link to="/testimonials" class="col-sm">Testimonials</router-link>
+            <router-link to="/contact" class="col-sm">Contact</router-link>
         </div>
     </div>
 </template>
 
 <style scoped>
+@media only screen and (max-width: 601px) {
+
+   #display {
+    background-color: black;
+   }
+}
+
 div {
-    background-color: #7303c0;
+    background-image: radial-gradient(#7303c0, black);
     display: flex;
     flex-direction: row;
     justify-content: center;
