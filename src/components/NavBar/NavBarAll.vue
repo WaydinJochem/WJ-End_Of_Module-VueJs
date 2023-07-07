@@ -58,12 +58,12 @@ a:hover {
 }
 @media only screen and (max-width:575px){
     div {
-        font-size: xx-small;
+        font-size: 30px;
     }
 }
-@media only screen and (max-width:575px){
+/* @media only screen and (max-width:575px){
     div {
         font-size: x-small;
     }
-}
+} */
 </style>
