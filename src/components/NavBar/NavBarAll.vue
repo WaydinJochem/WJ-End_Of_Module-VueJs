@@ -1,6 +1,6 @@
 <template >
     <div>
-        <div class="text-center row container-fluid" id="dislplay">
+        <div class="text-center container-fluid" id="dislplay">
             <router-link to="/" class="col-sm">Home</router-link>
             <router-link to="/about" class="col-sm">About</router-link>
             <router-link to="/resume" class="col-sm">Resume</router-link>
@@ -61,6 +61,7 @@ a:hover {
         font-size: 10px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 /* @media only screen and (max-width:575px){
