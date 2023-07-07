@@ -1,4 +1,4 @@
-n<template>
+<template>
     <!-- Footer refusing to stay at the bottom come back and look into it -->
     <RouterView />
         <FooterComp />

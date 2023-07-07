@@ -8,12 +8,12 @@
         Who Am I
       </h1>
       <p class="p-3">
-        My Name is Waydin Jochem, I am a 20 year-old man currently residing in Cape Town, South Africa. I done my
+        My Name is Waydin Jochem, I am a 20 year-old male currently residing in Cape Town, South Africa. I done my
         primary-schooling at Saint John's Roman Catholic Primary School, and for my high-schooling I attended Kensington
         Secondary School.My past-times involve alternative sports such as chess , table tennis and video-gaming. I have a
         love for learning new things and pride myself on being an eternal student, meaning I go throughout my life
         learning
-        gathering greater and greater amounts of knowledge, hence why I decided to pursue a career in IT
+        gathering greater and greater amounts of knowledge, hence why I developed a passion for Web Design.
       </p>
     </div>
     <!-- Who Am I Section End -->

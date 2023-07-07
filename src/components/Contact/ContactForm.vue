@@ -1,5 +1,5 @@
 <template>
-    <section id="contact" class="container py-2 mx-auto">
+    <section id="contact" class="container py-2 ">
         <form action="https://formspree.io/f/mqkorbqv" method="POST">
             <div>
                 <label>
@@ -41,7 +41,6 @@ export default {
 #contact {
     background-image: radial-gradient(purple, black);
     border-radius: 20px;
-    margin: 5%;
     text-align: center;
     color: white;
     animation: appear 3s ease-in 1,1;

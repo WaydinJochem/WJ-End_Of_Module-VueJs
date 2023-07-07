@@ -36,9 +36,13 @@ img {
 }
 
 #myself {
-  position: absolute;
+  /* position: absolute;
   bottom: 20px;
-  right: 20px;
+  right: 20px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
 }
 
 
