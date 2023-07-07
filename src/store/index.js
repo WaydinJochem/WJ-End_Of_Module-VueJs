@@ -11,6 +11,9 @@ export default createStore({
     setProjects: (state, value) => {
       state.projects = value;
     },
+    setResume: (state, value) => {
+      state.resume = value;
+    },
   },
   actions: {
     async fetchTestimonials(context) {
@@ -34,6 +37,20 @@ export default createStore({
         ).json();
         if (projects) {
           context.commit("setProjects", projects);
+        } else {
+          alert("Error");
+        }
+      } catch (e) {
+        console.error(error);
+      }
+    },
+    async fetchResume(context) {
+      try {
+        let { resume } = await (
+          await fetch("https://waydinjochem.github.io/data.json")
+        ).json();
+        if (resume) {
+          context.commit("setResume", resume);
         } else {
           alert("Error");
         }
