@@ -42,4 +42,9 @@ export default {
         opacity: 1;
     }
 }
+@media only screen and (max-width:375px) {
+    .col {
+        font-size: x-small;
+    }
+}
 </style>
