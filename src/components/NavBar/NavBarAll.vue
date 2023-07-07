@@ -12,12 +12,6 @@
 </template>
 
 <style scoped>
-@media only screen and (max-width: 601px) {
-
-   #display {
-    background-color: black;
-   }
-}
 
 div {
     background-image: radial-gradient(#7303c0, black);
@@ -40,20 +34,36 @@ a:hover {
 }
 .router-link-active {
     text-decoration: 2px black underline;
-    animation: colorswitch 2s  ease infinite;
+    animation: colorswitch 5s  ease-in-out infinite;
 }
 
 @keyframes colorswitch {
    0% {
     color:  white;
    }
+   25% {
+    color: gray;
+   }
    50% {
    color: #7303c0;
-    font-size: large;
    }
    100% {
     color: transparent;
-    font-size: large;
    }
+}
+@media only screen and (max-width:750px){
+    div {
+        font-size: small;
+    }
+}
+@media only screen and (max-width:575px){
+    div {
+        font-size: xx-small;
+    }
+}
+@media only screen and (max-width:575px){
+    div {
+        font-size: x-small;
+    }
 }
 </style>

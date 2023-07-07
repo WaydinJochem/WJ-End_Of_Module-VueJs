@@ -26,11 +26,20 @@ export default {
 
 }
 </script>
-<style>
+<style scoped>
 .container {
     background-image: radial-gradient(purple, black);
+    animation: appear 3s ease-in 1,1;
 }
 .row{
     color: white;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 </style>

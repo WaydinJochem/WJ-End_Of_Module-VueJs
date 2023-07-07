@@ -117,7 +117,7 @@
       </h1>
       <p id="Ss" class=" container-fluid px-auto mx-auto">
         <img src="https://i.postimg.cc/Jn3PV97N/html-5-logotype.png" alt="img" class="bg-body-secondary border">
-        <img src="https://i.postimg.cc/gk3k9s3Y/files.png" alt="img" class="bg-body-secondary border" >
+        <img src="https://i.postimg.cc/gk3k9s3Y/files.png" alt="img" class="bg-body-secondary border">
         <img src="https://i.postimg.cc/66k51g2j/bootstrap.png" alt="img" class="bg-white border">
         <img src="https://i.postimg.cc/nhkFrLdg/Screenshot-2023-07-03-100843.png" alt="img">
         <img src="https://i.postimg.cc/Zq5Tdh2R/14951662-0.jpg" alt="img">
@@ -150,9 +150,17 @@ h1 {
   padding: 1%;
   text-align: center;
   color: white;
+  animation: appear 3s ease-in 1,1;
 }
 
-
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 .flip-card {
   background-color: transparent;
   width: 300px;

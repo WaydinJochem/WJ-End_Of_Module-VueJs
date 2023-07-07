@@ -20,7 +20,7 @@ export default {
 body {
     background: linear-gradient( white, purple, black);
     animation: spinning 10s ease infinite;
-    background-size: 100% 100%;
+    background-size: 200% 200%;
     background-attachment: fixed;
     font-family: cursive;
 }

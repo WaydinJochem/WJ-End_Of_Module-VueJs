@@ -7,7 +7,7 @@
                 <div class="flip-card mb-4">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <h4>
+                            <h4 class="container pt-2">
                                 {{ projects.name }}
                             </h4>
                             <div>

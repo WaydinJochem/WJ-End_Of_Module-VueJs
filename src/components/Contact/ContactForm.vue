@@ -1,5 +1,5 @@
 <template>
-    <section id="contact" class="container py-2 mx-auto bg-primary">
+    <section id="contact" class="container py-2 mx-auto">
         <form action="https://formspree.io/f/mqkorbqv" method="POST">
             <div>
                 <label>
@@ -44,9 +44,9 @@ export default {
     margin: 5%;
     text-align: center;
     color: white;
-    animation: appear 3s ease-in infinite;
+    animation: appear 3s ease-in 1,1;
 }
-@media appear {
+@keyframes appear {
     from {
         opacity: 0;
     }

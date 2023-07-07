@@ -1,5 +1,5 @@
 <template>
-    <div v-if="testimonials" class="mt-4">
+    <div v-if="testimonials" class="mt-4" id="test">
         <div v-for="testimonials in testimonials" :key="testimonials.id" :testimonials="testimonials">
             <div class="accordion accordion-flush container" id="accordionFlushExample">
                 <div class="accordion-item">
@@ -45,8 +45,19 @@ export default {
 }
 </script>
 <style scoped>
+#test {
+    animation: appear 3s ease-in 1,1;
+}
 img {
     width: 150px;
     height: 150px;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 </style>
