@@ -10,8 +10,9 @@
         </div>
         <div v-else class="text-center">Waiting To show</div>
     </div>
+    <div>
+    </div>
 </template>
-    Download CV
 <script>
 import NavAll from '@/components/NavBar/NavBarAll.vue';
 export default {
