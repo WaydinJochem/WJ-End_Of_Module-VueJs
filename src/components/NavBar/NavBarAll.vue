@@ -59,6 +59,8 @@ a:hover {
 @media only screen and (max-width:575px){
     div {
         font-size: 10px;
+        display: flex;
+        flex-direction: row;
     }
 }
 /* @media only screen and (max-width:575px){
