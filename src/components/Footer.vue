@@ -7,7 +7,7 @@
             <a href=""><img src="https://i.postimg.cc/mkmMj12H/icons8-instagram-1.gif" alt="instagram" class="img-fluid"></a>
             <a href=""><img src="https://i.postimg.cc/B6GxnGVX/icons8-linkedin-circled-1.gif" alt="linkedIn" class="img-fluid"></a>
             <a href=""><img src="https://i.postimg.cc/3N1jqb9W/icons8-github-1.gif" alt="GitHub" class="img-fluid"></a>
-        </div><br>
+        </div>
         <p class="fs-2 text-black fw-bold">
             &copy; 2023 Waydin Jochem
         </p>

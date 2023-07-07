@@ -1,6 +1,5 @@
 <template>
     <NavAll />
-    <h2 class="playball text-center">Projects</h2>
     <Card />
 </template>
 <script>

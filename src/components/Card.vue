@@ -1,5 +1,5 @@
 <template>
-    <div v-if="projects" id="display">
+    <div v-if="projects" id="display" class="mt-4 container-fluid mx-auto">
         <div v-for="projects in projects" :key="projects.id" :projects="projects">
             <!-- Card Start -->
             <div class="container-fluid">
@@ -24,8 +24,8 @@
                                 </p>
                             </div>
                             <div>
-                                <a class="btn btn-dark col-4 p-0 me-2" :href="projects.git">Launch Git</a>
-                                <a class="btn btn-dark col-4 p-0" :href="projects.link" >Launch Site</a>
+                                <a class="btn btn-dark col-4 p-0 me-2" :href="projects.git" target="_blank">Launch Git</a>
+                                <a class="btn btn-dark col-4 p-0" :href="projects.link" target="_blank" >Launch Site</a>
                             </div>
                         </div>
                     </div>
@@ -52,6 +52,7 @@ export default {
 #display {
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
 }
 
 
@@ -110,5 +111,9 @@ export default {
     width: 100px;
 }
 
-@media only screen and (max-width:)
+@media only screen and (max-width:400px) {
+    .flip-card {
+        width: 250px;
+    }
+}
 </style>

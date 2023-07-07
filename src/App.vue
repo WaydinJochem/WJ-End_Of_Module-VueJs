@@ -12,13 +12,17 @@ export default {
 }
 </script>
 <style>
-
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body {
     background: linear-gradient( white, purple, black);
     animation: spinning 10s ease infinite;
-    background-size: 200% 200%;
+    background-size: 100% 100%;
     background-attachment: fixed;
-    font-family: "Bruno Ace", cursive;
+    font-family: cursive;
 }
 
 @keyframes spinning {

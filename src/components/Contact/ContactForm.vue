@@ -1,5 +1,5 @@
 <template>
-    <section id="contact">
+    <section id="contact" class="container py-2 mx-auto bg-primary">
         <form action="https://formspree.io/f/mqkorbqv" method="POST">
             <div>
                 <label>
@@ -42,11 +42,18 @@ export default {
     background-image: radial-gradient(purple, black);
     border-radius: 20px;
     margin: 5%;
-    padding: 0.8%;
     text-align: center;
     color: white;
+    animation: appear 3s ease-in infinite;
 }
-
+@media appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 div label {
     display: flex;
     flex-direction: column;
@@ -81,5 +88,10 @@ label textarea {
 #sub-btn:hover {
     font-size: large;
     background-image: linear-gradient(purple, violet);
+}
+@media only screen and (max-width: 400px) {
+    textarea {
+        width: 250px;
+    }
 }
 </style>

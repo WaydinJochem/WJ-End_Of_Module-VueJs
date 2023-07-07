@@ -39,8 +39,21 @@ a:hover {
     font-weight: bold;
 }
 .router-link-active {
-    border: 2px black solid;
-    border-radius: 50%;
-    font-size: x-large;
+    text-decoration: 2px black underline;
+    animation: colorswitch 2s  ease infinite;
+}
+
+@keyframes colorswitch {
+   0% {
+    color:  white;
+   }
+   50% {
+   color: #7303c0;
+    font-size: large;
+   }
+   100% {
+    color: transparent;
+    font-size: large;
+   }
 }
 </style>
