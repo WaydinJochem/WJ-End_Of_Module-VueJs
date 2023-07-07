@@ -1,5 +1,5 @@
 <template>
-    <div v-if="testimonials">
+    <div v-if="testimonials" class="mt-4">
         <div v-for="testimonials in testimonials" :key="testimonials.id" :testimonials="testimonials">
             <div class="accordion accordion-flush container" id="accordionFlushExample">
                 <div class="accordion-item">
@@ -11,12 +11,18 @@
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <div>
-                                <img :src="testimonials.img" :alt="testimonials.name">
+                        <div class="accordion-body row container-fluid">
+                            <div class="col">
+                                <div class="mx-auto w-50 p-2">
+                                    <img :src="testimonials.img" :alt="testimonials.name" class="rounded-3 mx-4">
+                                </div>
                             </div>
-                            <div>
-                                {{ testimonials.statment }}
+                            <div class="col-md">
+                                <div class="me-4">
+                                    <strong>"</strong>
+                                    {{ testimonials.statment }}
+                                    <strong>"</strong>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -38,4 +44,9 @@ export default {
     },
 }
 </script>
-<style></style>
+<style scoped>
+img {
+    width: 150px;
+    height: 150px;
+}
+</style>
