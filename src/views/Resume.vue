@@ -16,8 +16,8 @@
 import NavAll from '@/components/NavBar/NavBarAll.vue';
 export default {
     computed: {
-        testimonials() {
-            return this.$store.state.testimonials
+        resume() {
+            return this.$store.state.resume
         }
     },
     mounted() {
