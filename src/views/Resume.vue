@@ -5,8 +5,7 @@
             <div v-for="resume in resume" :key="resume.id" :resume="resume">
             </div>
             <div>
-                <iframe
-                    :src="resume.link"></iframe>
+                <iframe :src="resume.link"></iframe>
             </div>
         </div>
         <div v-else class="text-center">Waiting To show</div>
@@ -16,6 +15,14 @@
 <script>
 import NavAll from '@/components/NavBar/NavBarAll.vue';
 export default {
+    computed: {
+        testimonials() {
+            return this.$store.state.testimonials
+        }
+    },
+    mounted() {
+        this.$store.dispatch("fetchTestimonials");
+    },
     components: {
         NavAll
     }
