@@ -63,6 +63,9 @@ a:hover {
         flex-direction: row;
         flex-wrap: wrap;
     }
+    a:hover {
+        font-size: 10px;
+    }
 }
 /* @media only screen and (max-width:575px){
     div {
